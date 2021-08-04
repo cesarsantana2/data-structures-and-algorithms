@@ -28,8 +28,9 @@ def eh_heap_minimo(A):
 # Remoção heaps mínimos
 
 def promove(A, n):
+
     i = n
-    
+
     while True:
         #Elemento chegou na raiz da árvore.
         if i == 1:
@@ -39,7 +40,7 @@ def promove(A, n):
         if A[p] >= A[i]:
             break
 
-        #Troca elemento de lugar com o pai. 
+        #Troca elemento de lugar com o pai.
         A[p], A[i] = A[i], A[p]
         i = p
 
